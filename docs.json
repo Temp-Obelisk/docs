@@ -3,11 +3,10 @@
   "theme": "mint",
   "name": "Dgraph Docs",
   "colors": {
-    "primary": "#FF00EE",
-    "light": "#CC00BE",
-    "dark": "#CC00BE"
+    "primary": "#FF7F00",
+    "light": "#FF9933",
+    "dark": "#E65C00"
   },
-  "favicon": "favicon.png",
   "variables": {
     "company": {
       "name": "Dgraph",
@@ -45,8 +44,8 @@
           "anchor": "Dgraph Cloud",
           "icon": "cloud",
           "color": {
-            "light": "#FF00EE",
-            "dark": "#CC00BE"
+            "light": "#FF7F00",
+            "dark": "#E65C00"
           },
           "href": "https://cloud.dgraph.io"
         }
@@ -357,10 +356,6 @@
         ]
       }
     ]
-  },
-  "logo": {
-    "light": "/images/logo/light.svg",
-    "dark": "/images/logo/dark.svg"
   },
   "background": {
     "color": {
