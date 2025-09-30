@@ -10,9 +10,8 @@ Dgraph for AI-ready knowledge graphs.
 ## Availability
 
 As we prepare for the general availability, we're making a set of preview
-releases available for use on Hypermode and locally. The fastest way to get
-started is to sign up for a free
-[Hypermode account](https://hypermode.com/login).
+releases available for local use. The fastest way to get
+started is with Docker.
 
 The run locally, use the Docker image `dgraph/standalone:v25.0.0-preview6`.
 
@@ -50,8 +49,8 @@ authentication and authorization (formerly Access Control Lists).
 <Note>
   The APIs in the preview release are subject to minor changes before general
   availability. Please share feedback via
-  [Discord](https://discord.hypermode.com) or
-  [GitHub](https://github.com/hypermodeinc/dgraph).
+  [Discord]({variables.company.discord}) or
+  [GitHub]({variables.repos.dgraph}).
 </Note>
 
 ## Namespaces
@@ -160,29 +159,6 @@ defer client.Close()
 // use the client
 ```
 
-### Connect to Hypermode Graph
-
-You can use either `Open` or `NewClient` to connect to a Hypermode Graph.
-Hypermode automatically handles load balancing in multi-node clusters.
-
-Using `Open` with a connection string:
-
-```go
-client, err := dgo.Open("dgraph://<graph-workspace>.hypermode.host?sslmode=verify-ca&bearertoken=<bearer-token>")
-// handle error
-defer client.Close()
-```
-
-Using `NewClient`:
-
-```go
-client, err := dgo.NewClient("<graph-workspace>.hypermode.host:443",
-  dgo.WithBearerToken("<bearer-token>"),
-  dgo.WithSystemCertPool(),
-)
-// handle error
-defer client.Close()
-```
 
 ### Set schema
 
@@ -377,28 +353,9 @@ assistants:
 To add the MCP server to your coding assistant, add the following to your
 configuration file:
 
-When using Hypermode Graphs, the MCP configuration is available on the graph
-details screen in the console.
+For local development, use the following configuration:
 
-<CodeGroup>
-
-```json Hypermode
-{
-  "mcpServers": {
-    "hypermode-graph": {
-      "command": "npx",
-      "args": [
-        "mcp-remote",
-        "https://<graph-workspace>.hypermode.host/mcp/sse",
-        "--header",
-        "Authorization: Bearer <bearer-token>"
-      ]
-    }
-  }
-}
-```
-
-```json local
+```json
 {
   "mcpServers": {
     "dgraph": {
@@ -409,12 +366,10 @@ details screen in the console.
 }
 ```
 
-</CodeGroup>
-
 <Tip>
   We're continuing to refine the resources available on the MCP servers. Please
-  share feedback via [Discord](https://discord.hypermode.com) or
-  [GitHub](https://github.com/hypermodeinc/dgraph).
+  share feedback via [Discord]({variables.company.discord}) or
+  [GitHub]({variables.repos.dgraph}).
 </Tip>
 
 ### Tools
@@ -433,4 +388,4 @@ For clients that support prompts over the MCP protocol, a prompt is available to
 provide an introduction to the agent.
 
 The full text of the prompt is
-[available in the Dgraph repo](https://github.com/hypermodeinc/dgraph/blob/8a774a03ac2558ad027bd86ead8b0059d3bfa3f5/dgraph/cmd/mcp/prompt.txt).
+[available in the Dgraph repo]({variables.repos.dgraph}/blob/8a774a03ac2558ad027bd86ead8b0059d3bfa3f5/dgraph/cmd/mcp/prompt.txt).

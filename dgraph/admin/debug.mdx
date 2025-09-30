@@ -321,7 +321,7 @@ $ curl -H "Content-Type: application/rdf" "localhost:8080/mutate?commitNow=true"
   set {
     _:dgraph <name> "Dgraph" .
     _:dgraph <dgraph.type> "Software" .
-    _:dgraph <url> "https://github.com/hypermodeinc/dgraph" .
+    _:dgraph <url> "{variables.repos.dgraph}" .
     _:dgraph <description> "Fast, Transactional, Distributed Graph Database." .
   }
 }'
@@ -409,11 +409,11 @@ this is the full-text index ([0x8][tok_fulltext]). These IDs match the index IDs
 in [tok.go][tok].
 
 [tok_term]:
-  https://github.com/hypermodeinc/dgraph/blob/ce82aaafba3d9e57cf5ea1aeb9b637193441e1e2/tok/tok.go#L39
+  {variables.repos.dgraph}/blob/ce82aaafba3d9e57cf5ea1aeb9b637193441e1e2/tok/tok.go#L39
 [tok_fulltext]:
-  https://github.com/hypermodeinc/dgraph/blob/ce82aaafba3d9e57cf5ea1aeb9b637193441e1e2/tok/tok.go#L48
+  {variables.repos.dgraph}/blob/ce82aaafba3d9e57cf5ea1aeb9b637193441e1e2/tok/tok.go#L48
 [tok]:
-  https://github.com/hypermodeinc/dgraph/blob/ce82aaafba3d9e57cf5ea1aeb9b637193441e1e2/tok/tok.go#L37-L53
+  {variables.repos.dgraph}/blob/ce82aaafba3d9e57cf5ea1aeb9b637193441e1e2/tok/tok.go#L37-L53
 
 ## Key lookup
 
@@ -441,7 +441,7 @@ dgraph debug --postings ./p --lookup 000000000000000000000375726c000000000000000
 ```text
 Opening DB: ./p
 
-Key: 000000000000000000000375726c000000000000000001 Length: 1 Is multi-part list? false Uid: 18446744073709551615 Op: 1  Type: STRING.  String Value: "https://github.com/hypermodeinc/dgraph
+Key: 000000000000000000000375726c000000000000000001 Length: 1 Is multi-part list? false Uid: 18446744073709551615 Op: 1  Type: STRING.  String Value: "{variables.repos.dgraph}
 ```
 
 For index keys, a lookup shows the UIDs that are part of this index. Below, we

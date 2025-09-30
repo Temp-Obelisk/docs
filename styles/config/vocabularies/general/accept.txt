@@ -245,6 +245,5 @@ signup
 schemaless
 CRMAgent
 [aA]gent
-Hypermode
 Tom
 Anderson

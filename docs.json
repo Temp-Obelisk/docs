@@ -8,6 +8,36 @@
     "dark": "#CC00BE"
   },
   "favicon": "favicon.png",
+  "variables": {
+    "company": {
+      "name": "Dgraph",
+      "website": "https://dgraph.io",
+      "blog": "https://dgraph.io/blog",
+      "github": "https://github.com/dgraph-io",
+      "discord": "https://discord.gg/dgraph",
+      "support": "support@dgraph.io",
+      "twitter": "https://x.com/dgraphdatabase",
+      "linkedin": "https://www.linkedin.com/company/dgraph",
+      "youtube": "https://www.youtube.com/@dgraphdatabase"
+    },
+    "products": {
+      "cloud": "https://cloud.dgraph.io",
+      "playground": "https://play.dgraph.io",
+      "status": "https://status.dgraph.io",
+      "ratel": "https://play.dgraph.io"
+    },
+    "repos": {
+      "dgraph": "https://github.com/dgraph-io/dgraph",
+      "badger": "https://github.com/dgraph-io/badger",
+      "ristretto": "https://github.com/dgraph-io/ristretto",
+      "dgo": "https://github.com/dgraph-io/dgo",
+      "pydgraph": "https://github.com/dgraph-io/pydgraph",
+      "dgraph4j": "https://github.com/dgraph-io/dgraph4j",
+      "dgraphjs": "https://github.com/dgraph-io/dgraph-js",
+      "dgraphnet": "https://github.com/dgraph-io/dgraph.net",
+      "docs": "https://github.com/dgraph-io/dgraph-docs"
+    }
+  },
   "navigation": {
     "global": {
       "anchors": [
@@ -339,26 +369,9 @@
     }
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Status",
-        "href": "https://status.dgraph.io"
-      },
-      {
-        "label": "Blog",
-        "href": "https://dgraph.io/blog"
-      }
-    ]
+    "links": []
   },
-  "footer": {
-    "socials": {
-      "discord": "https://discord.gg/dgraph",
-      "github": "https://github.com/dgraph-io",
-      "youtube": "https://www.youtube.com/@dgraphdatabase",
-      "x": "https://x.com/dgraphdatabase",
-      "linkedin": "https://www.linkedin.com/company/dgraph"
-    }
-  },
+  "footer": {},
   "integrations": {
     "fathom": {
       "siteId": "LQSVRZXR"

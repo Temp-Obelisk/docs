@@ -1,16 +1,16 @@
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/hypermodeinc/docs)](https://github.com/hypermodeinc/docs/commits/main/)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/dgraph-io/dgraph-docs)](https://github.com/dgraph-io/dgraph-docs/commits/main/)
 
 # Docs
 
 This repo contains all of the docs and supporting assets for
-Hypermode's open source projects documentation. It includes documentation
-for the open source projects that Hypermode leads:
+Dgraph and related open source projects documentation. It includes documentation
+for the following open source projects:
 
-- [Dgraph](https://github.com/hypermodeinc/dgraph) - distributed, transactional
+- [Dgraph](https://github.com/dgraph-io/dgraph) - distributed, transactional
   graph database for real-time use cases
-- [Badger](https://github.com/hypermodeinc/badger) - embeddable key-value store
+- [Badger](https://github.com/dgraph-io/badger) - embeddable key-value store
   in Go
-- [Ristretto](https://github.com/hypermodeinc/ristretto) - embeddable
+- [Ristretto](https://github.com/dgraph-io/ristretto) - embeddable
   memory-bound cache in Go
 
 ## Found an issue?
@@ -24,8 +24,8 @@ for the fix. No issue required!
 
 ## Connect
 
-You can ask questions and meet others from the Hypermode community in our
-[Discord](https://discord.hypermode.com).
+You can ask questions and meet others from the Dgraph community in our
+[Discord](https://discord.gg/dgraph).
 
 ## Contributing
 
@@ -36,7 +36,7 @@ The design and hosting of our docs site is provided by
 [Mintlify](https://mintlify.com/). The vast majority of configuration is in code
 in `mint.json`.
 
-Changes are deployed to [production](https://docs.hypermode.com) automatically
+Changes are deployed to production automatically
 after pushing to the `main` branch.
 
 ### Development Environment Setup
@@ -75,11 +75,11 @@ mintlify dev
 #### Style
 
 Consistency is important in any documentation experience. Beyond Markdown’s
-opinionated structure, we adhere to a consistent style for Hypermode.
+opinionated structure, we adhere to a consistent style for documentation.
 
 We have adopted
-[Google’s Developer Documentation Style Guide](https://developers.google.com/style/)
-as a baseline, with Hypermode-specific terms
+[Google's Developer Documentation Style Guide](https://developers.google.com/style/)
+as a baseline, with project-specific terms
 [stored in a vocabulary file](./styles/config/vocabularies/general/accept.txt).
 
 [Vale](https://vale.sh/) has been implemented in the repo for easy alignment.

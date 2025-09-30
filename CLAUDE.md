@@ -38,7 +38,7 @@ trunk check --all
 ## Architecture and Structure
 
 ### Project Type
-This is a **documentation repository** for Hypermode's open source projects:
+This is a **documentation repository** for Dgraph and related open source projects:
 - **Dgraph** - distributed graph database
 - **Badger** - embeddable key-value store
 - **Ristretto** - embeddable memory cache
