@@ -332,7 +332,7 @@ $ curl -H "Content-Type: application/rdf" "localhost:8080/mutate?commitNow=true"
   set {
     _:badger <name> "Badger" .
     _:badger <dgraph.type> "Software" .
-    _:badger <url> "https://github.com/hypermodeinc/badger" .
+    _:badger <url> "{variables.repos.badger}" .
     _:badger <description> "Embeddable, persistent and fast key-value (KV) database written in pure Go." .
   }
 }'

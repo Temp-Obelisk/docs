@@ -56,7 +56,7 @@ using:
 2. Start a StatefulSet that creates Pods with `Zero`, `Alpha`, and `Ratel UI`:
 
    ```sh
-   kubectl create --filename https://raw.githubusercontent.com/hypermodeinc/dgraph/master/contrib/config/kubernetes/dgraph-ha/dgraph-ha.yaml
+   kubectl create --filename https://raw.githubusercontent.com/dgraph-io/dgraph/master/contrib/config/kubernetes/dgraph-ha/dgraph-ha.yaml
    ```
 
    An output similar to this appears:
@@ -109,7 +109,7 @@ using:
 Delete all the resources using:
 
 ```sh
-kubectl delete --filename https://raw.githubusercontent.com/hypermodeinc/dgraph/master/contrib/config/kubernetes/dgraph-ha/dgraph-ha.yaml
+kubectl delete --filename https://raw.githubusercontent.com/dgraph-io/dgraph/master/contrib/config/kubernetes/dgraph-ha/dgraph-ha.yaml
 kubectl delete persistentvolumeclaims --selector app=dgraph-zero
 kubectl delete persistentvolumeclaims --selector app=dgraph-alpha
 ```
@@ -185,8 +185,8 @@ kubectl delete persistentvolumeclaims --selector app=dgraph-alpha
    1. You have just deployed Dgraph, version 'v21.12.0'.
 
        For further information:
-       * Documentation: https://docs.hypermode.com/dgraph
-       * Community and Issues: https://discuss.hypermode.com/
+       * Documentation: https://docs.dgraph.io/dgraph
+       * Community and Issues: {variables.company.discord}
    2. Get the Dgraph Alpha HTTP/S endpoint by running these commands.
        export ALPHA_POD_NAME=$(kubectl get pods --namespace default --selector "statefulset.kubernetes.io/pod-name=<RELEASE-NAME>-dgraph-alpha-0,release=<RELEASE-NAME>-dgraph" --output jsonpath="{.items[0].metadata.name}")
        echo "Access Alpha HTTP/S using http://localhost:8080"

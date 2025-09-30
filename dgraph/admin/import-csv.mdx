@@ -28,7 +28,7 @@ Ratel.
    ```csv
    Name,URL
    Dgraph,{variables.repos.dgraph}
-   Badger,https://github.com/hypermodeinc/badger
+   Badger,{variables.repos.badger}
    ```
 
 2. Change to the directory that contains the `names.csv` file and convert it to
@@ -54,7 +54,7 @@ Ratel.
      },
      {
        "Name": "Badger",
-       "URL": "https://github.com/hypermodeinc/badger"
+       "URL": "{variables.repos.badger}"
      }
    ]
    ```
@@ -83,7 +83,7 @@ Ratel.
        },
        {
          "Name": "Badger",
-         "URL": "https://github.com/hypermodeinc/badger"
+         "URL": "{variables.repos.badger}"
        }
      ]
    }
