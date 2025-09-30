@@ -1,28 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Hypermode",
+  "name": "Dgraph Docs",
   "colors": {
     "primary": "#FF00EE",
     "light": "#CC00BE",
     "dark": "#CC00BE"
   },
   "favicon": "favicon.png",
-  "banner": {
-    "content": "🎉 Hypermode Agents Beta: natural language agent creation, 2,000+ integrations, export to code [Try Agents now! →](https://hypermode.com/login)"
-  },
   "navigation": {
     "global": {
       "anchors": [
-        {
-          "anchor": "Hypermode Graphs (preview)",
-          "icon": "chart-network",
-          "color": {
-            "light": "#FF00EE",
-            "dark": "#CC00BE"
-          },
-          "href": "https://hypermode.com/login"
-        },
         {
           "anchor": "Dgraph Cloud",
           "icon": "cloud",
@@ -31,256 +19,10 @@
             "dark": "#CC00BE"
           },
           "href": "https://cloud.dgraph.io"
-        },
-        {
-          "anchor": "Agents Bootcamp",
-          "icon": "calendar",
-          "color": {
-            "light": "#FF00EE",
-            "dark": "#CC00BE"
-          },
-          "href": "https://docs.hypermode.com/agents/30-days-of-agents/overview"
         }
       ]
     },
     "tabs": [
-      {
-        "tab": "Hypermode",
-        "groups": [
-          {
-            "group": "Hypermode",
-            "pages": [
-              "introduction",
-              {
-                "group": "Tutorials",
-                "pages": [
-                  "first-hypermode-agent",
-                  "first-sales-agent",
-                  "first-operations-agent",
-                  "agents/knowledge-graph-extraction",
-                  "semantic-search"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Agents",
-            "pages": [
-              "agents/introduction",
-              "agents/create-agent",
-              "agents/work",
-              {
-                "group": "Connect Your Agent",
-                "pages": [
-                  "agents/connections",
-                  {
-                    "group": "Available Connections",
-                    "pages": [
-                      "agents/available-connections",
-                      {
-                        "group": "CRM",
-                        "pages": ["agents/connections/attio"]
-                      },
-                      {
-                        "group": "Commerce",
-                        "pages": ["agents/connections/stripe"]
-                      },
-                      {
-                        "group": "Database",
-                        "pages": [
-                          "agents/connections/supabase",
-                          "agents/connections/neo4j",
-                          "agents/connections/mongodb",
-                          "agents/connections/motherduck"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              "agents/model-selection",
-              {
-                "group": "Example Agents",
-                "pages": [
-                  "agents/example-agents",
-                  "agents/agent-gallery/gtm-engineer",
-                  "agents/agent-gallery/market-researcher",
-                  "agents/agent-gallery/channelpulse",
-                  "agents/agent-gallery/persona-builder",
-                  "agents/agent-gallery/competitor-content-tracker",
-                  "agents/agent-gallery/pr-opportunity-scout",
-                  "agents/agent-gallery/event-webinar-optimizer",
-                  "agents/agent-gallery/social-media",
-                  "agents/agent-gallery/workout-scheduling",
-                  "agents/agent-gallery/music-recommendation",
-                  "agents/agent-gallery/github-review-bot",
-                  "agents/agent-gallery/linkedin-intelligence",
-                  "agents/agent-gallery/inventory-tracker"
-                ]
-              },
-              {
-                "group": "Agents Bootcamp",
-                "pages": [
-                  "agents/30-days-of-agents/overview",
-                  "agents/30-days-of-agents/calender",
-                  {
-                    "group": "Week 1",
-                    "pages": [
-                      "agents/30-days-of-agents/day-1",
-                      "agents/30-days-of-agents/day-2",
-                      "agents/30-days-of-agents/day-3",
-                      "agents/30-days-of-agents/day-4",
-                      "agents/30-days-of-agents/day-5"
-                    ]
-                  },
-                  {
-                    "group": "Week 2",
-                    "pages": [
-                      "agents/30-days-of-agents/day-6",
-                      "agents/30-days-of-agents/day-7",
-                      "agents/30-days-of-agents/day-8",
-                      "agents/30-days-of-agents/day-9",
-                      "agents/30-days-of-agents/day-10"
-                    ]
-                  },
-                  {
-                    "group": "Week 3",
-                    "pages": [
-                      "agents/30-days-of-agents/domain-specific-agents",
-                      "agents/30-days-of-agents/day-11",
-                      "agents/30-days-of-agents/day-12",
-                      "agents/30-days-of-agents/day-13",
-                      "agents/30-days-of-agents/day-14",
-                      "agents/30-days-of-agents/day-15"
-                    ]
-                  },
-                  {
-                    "group": "Week 4",
-                    "pages": [
-                      "agents/30-days-of-agents/context-engineering",
-                      "agents/30-days-of-agents/day-16",
-                      "agents/30-days-of-agents/day-17",
-                      "agents/30-days-of-agents/day-18",
-                      "agents/30-days-of-agents/day-19",
-                      "agents/30-days-of-agents/day-20",
-                      "agents/30-days-of-agents/day-21",
-                      "agents/30-days-of-agents/day-22"
-                    ]
-                  }
-                ]
-              },
-              "agents/faq"
-            ]
-          },
-          {
-            "group": "Apps",
-            "pages": [
-              "apps/overview",
-              "apps/create-app",
-              "apps/connect-app",
-              "apps/develop-app",
-              "apps/deploy-app"
-            ]
-          },
-          {
-            "group": "Graphs",
-            "pages": [
-              "graphs/overview",
-              "graphs/provision",
-              "graphs/connect",
-              "graphs/manage-schema",
-              "graphs/manage-data",
-              "graphs/manage-graph",
-              "graphs/graph-mcp"
-            ]
-          },
-          {
-            "group": "Tools",
-            "pages": ["model-router", "hyp-cli"]
-          },
-          {
-            "group": "Resources",
-            "pages": ["security", "community-and-support", "hypermode-docs-mcp"]
-          }
-        ]
-      },
-      {
-        "tab": "Modus",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "modus/overview",
-              "modus/first-modus-agent",
-              "modus/functions",
-              "modus/agents",
-              "modus/knowledge-graphs"
-            ]
-          },
-          {
-            "group": "Building Your App",
-            "pages": [
-              "modus/project-structure",
-              "modus/app-manifest",
-              "modus/data-fetching",
-              "modus/model-invoking",
-              "modus/api-generation",
-              "modus/authentication",
-              "modus/error-handling",
-              "modus/run-locally"
-            ]
-          },
-          {
-            "group": "How-To Guides",
-            "pages": ["modus/deepseek-model", "modus/modus-dgraph"]
-          },
-          {
-            "group": "SDK Reference",
-            "pages": [
-              {
-                "group": "AssemblyScript SDK",
-                "pages": [
-                  "modus/sdk/assemblyscript/overview",
-                  "modus/sdk/assemblyscript/agents",
-                  "modus/sdk/assemblyscript/console",
-                  "modus/sdk/assemblyscript/dgraph",
-                  "modus/sdk/assemblyscript/graphql",
-                  "modus/sdk/assemblyscript/http",
-                  "modus/sdk/assemblyscript/localtime",
-                  "modus/sdk/assemblyscript/models",
-                  "modus/sdk/assemblyscript/mysql",
-                  "modus/sdk/assemblyscript/neo4j",
-                  "modus/sdk/assemblyscript/postgresql"
-                ]
-              },
-              {
-                "group": "Go SDK",
-                "pages": [
-                  "modus/sdk/go/overview",
-                  "modus/sdk/go/agents",
-                  "modus/sdk/go/console",
-                  "modus/sdk/go/dgraph",
-                  "modus/sdk/go/graphql",
-                  "modus/sdk/go/http",
-                  "modus/sdk/go/localtime",
-                  "modus/sdk/go/models",
-                  "modus/sdk/go/mysql",
-                  "modus/sdk/go/neo4j",
-                  "modus/sdk/go/postgresql"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Tools",
-            "pages": ["modus/modus-cli"]
-          },
-          {
-            "group": "Resources",
-            "pages": ["modus/changelog"]
-          }
-        ]
-      },
       {
         "tab": "Dgraph",
         "groups": [
@@ -600,21 +342,21 @@
     "links": [
       {
         "label": "Status",
-        "href": "https://status.hypermode.com"
+        "href": "https://status.dgraph.io"
       },
       {
         "label": "Blog",
-        "href": "https://hypermode.com/blog"
+        "href": "https://dgraph.io/blog"
       }
     ]
   },
   "footer": {
     "socials": {
-      "discord": "https://discord.hypermode.com",
-      "github": "https://github.com/hypermodeinc",
-      "youtube": "https://www.youtube.com/@hypermodeinc",
-      "x": "https://x.com/hypermodeinc",
-      "linkedin": "https://www.linkedin.com/company/hypermode"
+      "discord": "https://discord.gg/dgraph",
+      "github": "https://github.com/dgraph-io",
+      "youtube": "https://www.youtube.com/@dgraphdatabase",
+      "x": "https://x.com/dgraphdatabase",
+      "linkedin": "https://www.linkedin.com/company/dgraph"
     }
   },
   "integrations": {
@@ -634,44 +376,8 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/introduction",
+      "destination": "/dgraph/overview",
       "permanent": true
-    },
-    {
-      "source": "/modus/sdk/console",
-      "destination": "/modus/sdk/assemblyscript/console"
-    },
-    {
-      "source": "/modus/sdk/dgraph",
-      "destination": "/modus/sdk/assemblyscript/dgraph"
-    },
-    {
-      "source": "/modus/sdk/graphql",
-      "destination": "/modus/sdk/assemblyscript/graphql"
-    },
-    {
-      "source": "/modus/sdk/http",
-      "destination": "/modus/sdk/assemblyscript/http"
-    },
-    {
-      "source": "/modus/sdk/localtime",
-      "destination": "/modus/sdk/assemblyscript/localtime"
-    },
-    {
-      "source": "/modus/sdk/models",
-      "destination": "/modus/sdk/assemblyscript/models"
-    },
-    {
-      "source": "/modus/sdk/mysql",
-      "destination": "/modus/sdk/assemblyscript/mysql"
-    },
-    {
-      "source": "/modus/sdk/neo4j",
-      "destination": "/modus/sdk/assemblyscript/neo4j"
-    },
-    {
-      "source": "/modus/sdk/postgresql",
-      "destination": "/modus/sdk/assemblyscript/postgresql"
     },
     {
       "source": "/graphs/deploy",

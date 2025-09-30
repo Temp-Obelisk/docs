@@ -20,82 +20,12 @@ This guide helps you to understand how to:
 
 ## Run Dgraph and connect the Ratel web UI
 
-The easiest way to get Dgraph up and running in the cloud is using
-[Dgraph on Hypermode](https://hypermode.com/login). If you prefer a local
-development experience with Dgraph we recommend using the official Dgraph Docker
-image. Both options are described below.
+We recommend using the official Dgraph Docker image for local development.
 
-In this section we'll create a new graph, then we'll connect our new graph to
+In this section we'll run Dgraph locally, then we'll connect to
 [Ratel](./glossary#ratel), the web-based UI for Dgraph.
 
-<Tabs>
-  <Tab title="On Hypermode">
-  <Steps>
-    <Step title="Sign in to Hypermode and create your workspace">
-
-      Open [`hypermode.com/login`](https://hypermode.com/login) in your web browser and sign
-      in to Hypermode to create your account.
-
-      After signing in you'll be prompted to choose a name for your workspace.
-
-      ![Create your Hypermode workspace](/images/dgraph/quickstart/create-workspace.png)
-
-      Enter a name for your workspace and then select **Create workspace**.
-
-    </Step>
-
-  <Step title="Create your graph">
-
-    After creating your Hypermode workspace you'll be prompted to create your first
-    graph.
-
-    ![Create your first Hypermode graph](/images/dgraph/quickstart/create-graph-2.png)
-
-    Enter a name for your graph and choose the hosting location, then select
-    **Create graph**.
-
-    </Step>
-
-  <Step title="View your graph details">
-
-Once your graph is created you'll see the graph details including its status,
-connection string, and API key.
-
-![Graph detail view](/images/dgraph/quickstart/graph-details.png)
-
-We'll use the Dgraph connection string and the API key to connect to our graph
-via Dgraph clients such as Ratel or language SDKs.
-
-Click on the copy icon next to the connection string to copy the Dgraph
-connection string.
-
-  </Step>
-
-  <Step title="Connect the Ratel graph client">
-
-Ratel is a web-based Dgraph client for interacting with your graph. We'll use
-Ratel to execute DQL queries and update the graph schema.
-
-Navigate to [ratel.hypermode.com](https://ratel.hypermode.com) and paste the
-Dgraph connection string you copied in the previous step into the "Dgraph Conn
-String" text box in Ratel then select **Connect** to verify the connection and
-then select **Continue** to access the Ratel console.
-
-![Connecting to Ratel](/images/dgraph/quickstart/ratel-connection-string.png)
-
-The Ratel console is where we can execute DQL queries and mutations and view the
-results of these operations, including visualizing graph data.
-
-![Ratel overview](/images/dgraph/quickstart/ratel-overview.png)
-
-Now we're ready to add data to our graph.
-
-  </Step>
-
-  </Steps>
-    </Tab>
-
-<Tab title="Locally"><Steps>
+<Steps>
       <Step title="Run Dgraph with Docker">
         The [`dgraph/standalone`](https://hub.docker.com/r/dgraph/standalone) Docker image has everything needed to run Dgraph locally.
 
@@ -117,7 +47,7 @@ Now we're ready to add data to our graph.
       <Step title="Connect Ratel">
         Ratel is a web-based UI dashboard for interacting with Dgraph using Dgraph's query language,[DQL](./glossary#DQL)
 
-        Navigate to the hosted version of Ratel at `https://ratel.hypermode.com` and enter `http://localhost:8080` for the "Dgraph Conn String".
+        Navigate to the hosted version of Ratel at `https://play.dgraph.io` and enter `http://localhost:8080` for the "Dgraph Conn String".
         This will allow Ratel to connect to our local Dgraph instance and execute DQL queries.
 
            ![Setting up Ratel](/images/dgraph/quickstart/ratel-docker-connection.png)
@@ -138,9 +68,6 @@ Now we're ready to add data to our graph.
 
       </Step>
       </Steps>
-
-</Tab>
-</Tabs>
 
 ## Add data to the graph with a mutation
 
@@ -507,7 +434,7 @@ the syntax `movies: ~Movie.genre`.
 
 </Steps>
 
-In this quick start we created a new graph instance using Dgraph on Hypermode,
+In this quick start we created a new graph instance using Dgraph locally,
 added data, queried the graph, visualized the results, and updated the schema of
 our graph.
 
@@ -516,10 +443,9 @@ our graph.
 - Learn more about using [DQL](/dgraph/dql/query) to query your graph.
 - Go to [Clients](/dgraph/sdks/overview) to see how to communicate with Dgraph
   from your app.
-- Learn how to build intelligent applications using Dgraph and Modus such as
-  [natural language search.](https://docs.hypermode.com/semantic-search)
+- Learn how to build intelligent applications using Dgraph
 
 ## Need help
 
-- Join the [Hypermode Discord server](https://discord.hypermode.com) for
+- Join the [Dgraph Discord server](https://discord.gg/dgraph) for
   questions, issues, feature requests, and discussions.
